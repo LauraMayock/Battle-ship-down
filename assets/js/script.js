@@ -1,5 +1,5 @@
 //Declare variables needed
-let battleshipRandom = Math.floor(Math.random()* 4)+1; // Create a random selection for where that battleship will go
+battleshipRandom = Math.floor(Math.random()* 4)+1; // Create a random selection for where that battleship will go
 let location1 = battleshipRandom;
 let location2 = location1 + 1;   //3 varibales in which the computers ship will reside
 let location3 = location2 + 1;
@@ -17,7 +17,7 @@ startBtn.addEventListener("click",start);
  
 //Create and event listener
 function start() {
-   
+   battleshipRandom()
 }
 // when a cell is clicked, it checks if the ship is there and updates the score if it is
 while (isSunk == "false") {
